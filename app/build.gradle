@@ -41,4 +41,7 @@ dependencies {
 
     //CircularImageView
     implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    //videoStreamingLibrary
+    implementation 'com.afollestad:easyvideoplayer:0.3.0'
 }
