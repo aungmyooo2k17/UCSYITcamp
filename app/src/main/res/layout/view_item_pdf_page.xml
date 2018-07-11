@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pdf_item_backgorund"
+    android:paddingBottom="@dimen/margin_medium_2"
+    android:paddingLeft="@dimen/margin_medium_2"
+    android:paddingRight="@dimen/margin_medium_2"
+    android:paddingTop="@dimen/margin_medium_2"
+    android:layout_marginTop="@dimen/margin_medium"
+    android:layout_marginBottom="@dimen/margin_medium"
+    android:layout_marginLeft="@dimen/margin_medium_2"
+    android:layout_marginRight="@dimen/margin_medium_2">
+
+
+    <ImageView
+        android:id="@+id/iv_speaker_prfile"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ucsybg" />
+
+    <TextView
+        android:id="@+id/tv_speaker_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_toRightOf="@id/iv_speaker_prfile"
+        android:text="Ko Ko Ye"
+        android:textSize="@dimen/text_regular_2x"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_speaker_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_speaker_name"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_toRightOf="@id/iv_speaker_prfile"
+        android:text="Team Leader at Ubuntu Myanmar Loco Team"
+        android:textSize="@dimen/text_regular" />
+
+    <ImageView
+        android:id="@+id/iv_pdf_image_cover"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/iv_speaker_prfile"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ucsybg" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/iv_speaker_prfile"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:background="@color/colorMainPageBG" />
+
+    <TextView
+        android:id="@+id/tv_topic_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ubuntu Cloud"
+        android:textSize="@dimen/text_regular_3x"
+        android:textStyle="bold"
+        android:layout_below="@id/iv_pdf_image_cover"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:textColor="@color/secondaryText"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_pdf_image_cover"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/text_small"
+        android:background="@drawable/btn_background"
+        android:paddingTop="@dimen/margin_medium"
+        android:paddingBottom="@dimen/margin_medium"
+        android:paddingRight="@dimen/margin_medium_2"
+        android:paddingLeft="@dimen/margin_medium_2"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:drawableRight="@drawable/ic_file_download"
+        android:text="DOWNLOAD"/>
+
+
+</RelativeLayout>

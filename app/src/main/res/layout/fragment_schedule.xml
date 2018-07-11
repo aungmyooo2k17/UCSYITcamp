@@ -1,11 +1,191 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ucsybg" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@color/colorMainPageBG" />
+
+        <TextView
+            android:id="@+id/tv_schedule_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_medium_2"
+            android:text="UCSY IT Camp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_regular_3x"
+            android:textStyle="bold" />
+
+        <com.tomerrosenfeld.customanalogclockview.CustomAnalogClock
+            android:id="@+id/analog_clock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:elevation="10dp"
+            app:default_watchface="true" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_medium_2"
+            android:layout_toRightOf="@id/analog_clock"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11:50 AM"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_heading_1x"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium_2"
+                android:text="Friday July 6"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_regular_2x"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/hsv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/margin_medium">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_medium_2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_medium_2"
+                    android:background="@drawable/schedule_time_choose_btn_background"
+                    android:paddingBottom="@dimen/margin_small"
+                    android:paddingLeft="@dimen/margin_medium"
+                    android:paddingRight="@dimen/margin_medium"
+                    android:paddingTop="@dimen/margin_small"
+                    android:text="9:00 - 9:45"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_medium_2"
+                    android:background="@drawable/schedule_time_choose_btn_background"
+                    android:paddingBottom="@dimen/margin_small"
+                    android:paddingLeft="@dimen/margin_medium"
+                    android:paddingRight="@dimen/margin_medium"
+                    android:paddingTop="@dimen/margin_small"
+                    android:text="9:00 - 9:45"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_medium_2"
+                    android:background="@drawable/schedule_time_choose_btn_background"
+                    android:paddingBottom="@dimen/margin_small"
+                    android:paddingLeft="@dimen/margin_medium"
+                    android:paddingRight="@dimen/margin_medium"
+                    android:paddingTop="@dimen/margin_small"
+                    android:text="9:00 - 9:45"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_medium_2"
+                    android:background="@drawable/schedule_time_choose_btn_background"
+                    android:paddingBottom="@dimen/margin_small"
+                    android:paddingLeft="@dimen/margin_medium"
+                    android:paddingRight="@dimen/margin_medium"
+                    android:paddingTop="@dimen/margin_small"
+                    android:text="9:00 - 9:45"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_medium_2"
+                    android:background="@drawable/schedule_time_choose_btn_background"
+                    android:paddingBottom="@dimen/margin_small"
+                    android:paddingLeft="@dimen/margin_medium"
+                    android:paddingRight="@dimen/margin_medium"
+                    android:paddingTop="@dimen/margin_small"
+                    android:text="9:00 - 9:45"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_medium_2"
+                    android:background="@drawable/schedule_time_choose_btn_background"
+                    android:paddingBottom="@dimen/margin_small"
+                    android:paddingLeft="@dimen/margin_medium"
+                    android:paddingRight="@dimen/margin_medium"
+                    android:paddingTop="@dimen/margin_small"
+                    android:text="9:00 - 9:45"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_medium_2"
+                    android:background="@drawable/schedule_time_choose_btn_background"
+                    android:paddingBottom="@dimen/margin_small"
+                    android:paddingLeft="@dimen/margin_medium"
+                    android:paddingRight="@dimen/margin_medium"
+                    android:paddingTop="@dimen/margin_small"
+                    android:text="9:00 - 9:45"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_small" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_schedule"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="schedul"/>
+        android:layout_below="@id/relativeLayout1"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:layout_marginTop="@dimen/margin_medium_2"/>
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
